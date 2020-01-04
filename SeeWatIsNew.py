@@ -15,6 +15,12 @@ driver.get("http://www.loto49.ro/arhiva-loto49.php")
 elements = driver.find_elements(By.XPATH, "/html/body/table/tbody/tr[4]/td/div/span/table/tbody/tr")
 
 #
+# Create a new empty text file for the new Deawings
+#	
+drawingNewTextFile = open("NewDrawings.new","w")
+drawingNewTextFile.close()
+
+#
 # Scanning the Table Elements from the page
 # The Drawings in 6/49 Romanian Lottery
 #
@@ -58,7 +64,7 @@ for element in elements:
 			os.mkdir(str(drawingDate.tm_year) +  "\\" + str(drawingDate.tm_mon).zfill(2))			
 		if (os.path.isdir(str(drawingDate.tm_year) + "\\" + str(drawingDate.tm_mon).zfill(2) + "\\" + str(drawingDate.tm_mday).zfill(2)) == False):
 			os.mkdir(str(drawingDate.tm_year) +  "\\" + str(drawingDate.tm_mon).zfill(2) + "\\" + str(drawingDate.tm_mday).zfill(2))
-		
+				
 		#
 		# Saving the Drawing in a temporary manner
 		#		
@@ -92,6 +98,9 @@ for element in elements:
 		else:
 			os.rename(drawingPathName, drawingPathNameNew)
 			print("New : ", drawingPathNameNew)
+			drawingNewTextFile = open("NewDrawings.new","a")
+			drawingNewTextFile.write(readDrawingText)
+			drawingNewTextFile.close()
 	
 driver.quit()
 
