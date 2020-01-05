@@ -1,9 +1,21 @@
+#
+# http://www.loto49.ro/arhiva-loto49.php
+#
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from ruamel.yaml import YAML
 import os
 import time
 import hashlib
+import smtplib
+import ssl
+
+# For SSL
+port = 465  
+password = "melifica"
+
+# Create a secure SSL context
+context = ssl.create_default_context()
 
 # YAML
 yamlDrawings = YAML(pure=True)
@@ -101,8 +113,23 @@ for element in elements:
 			drawingNewTextFile = open("NewDrawings.new","a")
 			drawingNewTextFile.write(readDrawingText)
 			drawingNewTextFile.close()
+
+			with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
+				server.login("tarni66kali@gmail.com", "Ngoro@0259")
+
+				sender_email = "tarni66kali@gmail.com"
+				receiver_email = "tarniadi@gmail.com"
+				message = """\
+				Subject: Hi there
+
+				""" + readDrawingText
+				
+				
+				server.sendmail(sender_email, receiver_email, message)
 	
 driver.quit()
+
+
 
 
 
