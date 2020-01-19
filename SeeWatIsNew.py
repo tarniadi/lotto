@@ -1,5 +1,6 @@
 #
 # http://www.loto49.ro/arhiva-loto49.php
+# python -m smtpd -c DebuggingServer -n localhost:1025
 #
 from selenium import webdriver
 from selenium.webdriver.common.by import By
