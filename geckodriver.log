@@ -17,3 +17,15 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1579892483839	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\kali\\AppData\\Local\\Temp\\rust_mozprofilefKtRwj"
+1579892484224	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579892484310	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579892484311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579892484311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579892484311	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1579892485676	Marionette	INFO	Listening on port 50029
+1579892485891	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 8724, MediaDecoderStateMachine #1] WARNING: 234b30177c0 OpenCubeb() failed to init cubeb: file z:/task_1579288126/build/src/dom/media/AudioStream.cpp, line 317
+[Child 8724, MediaDecoderStateMachine #1] WARNING: Decoder=234b42cf000 [OnMediaSinkAudioError]: file z:/task_1579288126/build/src/dom/media/MediaDecoderStateMachine.cpp, line 3689
+1579893561653	Marionette	INFO	Stopped listening on port 50029
