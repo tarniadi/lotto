@@ -103,3 +103,13 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 1581704054458	Marionette	INFO	Listening on port 51036
 1581704054753	Marionette	WARN	TLS certificate errors will be ignored for this session
 1581705026415	Marionette	INFO	Stopped listening on port 51036
+1582441568386	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\kali\\AppData\\Local\\Temp\\rust_mozprofilerP19W1"
+1582441568673	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1582441568920	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1582441568921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1582441568921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1582441568921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1582441570326	Marionette	INFO	Listening on port 50204
+1582441570419	Marionette	WARN	TLS certificate errors will be ignored for this session
+1582442587492	Marionette	INFO	Stopped listening on port 50204
