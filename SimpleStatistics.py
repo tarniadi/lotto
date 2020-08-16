@@ -62,17 +62,17 @@ for dirName, subdirList, fileList in os.walk(os.getcwd()):
 				#
 				# quadrup
 				#
-				quadruples.ProcessDrawing(drawingList)
+				#quadruples.ProcessDrawing(drawingList)
 					
 				#
 				# quintup
 				#
-				quintuples.ProcessDrawing(drawingList)
+				#quintuples.ProcessDrawing(drawingList)
 					
 				#
 				# sixtupl
 				#													
-				sextuples.ProcessDrawing(drawingList)
+				#sextuples.ProcessDrawing(drawingList)
 						
 #pp.pprint(simples)
 

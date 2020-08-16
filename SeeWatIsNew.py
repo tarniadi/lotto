@@ -25,7 +25,9 @@ yamlDrawings = YAML(pure=True)
 driver = webdriver.Firefox()
 driver.get("http://www.loto49.ro/arhiva-loto49.php")
 
-elements = driver.find_elements(By.XPATH, "/html/body/table/tbody/tr[4]/td/div/span/table/tbody/tr")
+#elements = driver.find_elements(By.XPATH, "/html/body/table/tbody/tr[4]/td/div/span/table/tbody/tr")
+# s-a schimbat formatul site-ului
+elements = driver.find_elements(By.XPATH, "/html/body/div/div[2]/div[2]/main/div/article/div[4]/table/tbody/tr")
 
 #
 # Create a new empty text file for the new Deawings
