@@ -118,7 +118,7 @@ for element in elements:
 			drawingNewTextFile.close()
 
 			with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
-				server.login("tarni66kali@gmail.com", "Ngoro@0259")
+				server.login("tarni66kali@gmail.com", "Jang^6691^Hyuk")
 
 				sender_email = "tarni66kali@gmail.com"
 				receiver_email = "tarniadi@gmail.com"
